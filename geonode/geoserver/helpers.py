@@ -1251,3 +1251,17 @@ _backgrounds = ["#880000", "#008800", "#000088", "#888800", "#008888", "#880088"
 _marks = ["square", "circle", "cross", "x", "triangle"]
 _style_contexts = izip(cycle(_foregrounds), cycle(_backgrounds), cycle(_marks))
 _default_style_names = ["point", "line", "polygon", "raster"]
+
+def store_type(layer, catalog=gs_catalog):
+    """
+    Returns a layer store type in Geoserver.
+
+    :param layer: A GeoNode layer object.
+    """
+    res = catalog.get_resource(layer.name, store=layer.store, workspace=layer.workspace)
+
+    try:
+        res.store.fetch()
+        return res.store.dom.find('type').text
+    except:
+        return None

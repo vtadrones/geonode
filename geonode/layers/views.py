@@ -201,6 +201,10 @@ def layer_detail(request, layername, template='layers/layer_detail.html'):
 
     context_dict["links"] = links
 
+    if 'geonode.geoserver' in settings.INSTALLED_APPS:
+        from geonode.geoserver.helpers import store_type
+        context_dict['geoserver'] = dict(store_type=store_type(layer))
+
     return render_to_response(template, RequestContext(request, context_dict))
 
 
