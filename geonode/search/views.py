@@ -253,10 +253,18 @@ def _search(query):
         results = combined_search_results(query)
         facets = results['facets']
         results = apply_normalizers(results)
+
+        # This is causing a can't pickle generator objects exception
+        #if query.cache:
         if query.cache:
-            dumped = zlib.compress(pickle.dumps((results, facets)))
-            logger.debug("cached search results %s", len(dumped))
-            cache.set(key, dumped, cache_time)
+            try:
+                logger.debug('RESULTS: {0}'.format(results))
+                dumped = zlib.compress(pickle.dumps((results, facets)))
+                logger.debug("cached search results %s", len(dumped))
+                cache.set(key, dumped, cache_time)
+            except TypeError:
+                import sys
+                logger.debug('Cache failed with exception: {0}'.format(sys.exc_info()))
 
     else:
         results, facets = pickle.loads(zlib.decompress(results))

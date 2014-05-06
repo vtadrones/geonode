@@ -275,7 +275,7 @@ class GroupNormalizer(Normalizer):
     def last_modified(self):
         return self.o.last_modified
 
-    def populate(self, doc, **kwargs):
+    def populate(self, doc, exclude):
         group = self.o
         doc['id'] = group.id
         doc['slug'] = group.slug
