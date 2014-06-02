@@ -203,7 +203,11 @@ def layer_detail(request, layername, template='layers/layer_detail.html'):
 
     if 'geonode.geoserver' in settings.INSTALLED_APPS:
         from geonode.geoserver.helpers import store_type
-        context_dict['geoserver'] = dict(store_type=store_type(layer))
+
+        try:
+            context_dict['geoserver'] = dict(store_type=store_type(layer))
+        except:
+            context_dict['geoserver'] = dict()
 
     return render_to_response(template, RequestContext(request, context_dict))
 
