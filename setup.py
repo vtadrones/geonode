@@ -59,29 +59,26 @@ for dirpath, dirnames, filenames in os.walk(geonode_dir):
         data_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
 
-setup(name='GeoNode',
+setup(name='geoshape-geonode',
       version=__import__('geonode').get_version(),
-      description="Application for serving and sharing geospatial data",
+      description="The GeoNode used for the GeoShape (formerly ROGUE) project (http://geoshape.org).",
       long_description=open('README').read(),
       classifiers=[
-        "Development Status :: 4 - Beta"],
+        "Development Status :: 5 - Production/Stable"],
       keywords='',
-      author='GeoNode Developers',
-      author_email='dev@geonode.org',
-      url='http://geonode.org',
+      author='LMN Solutions',
+      author_email='rogue@lmnsolutions.com',
+      url='https://github.com/ROGUE-JCTD/geonode',
       license='GPL',
       packages=packages,
       data_files=data_files,
       install_requires=[
-        # native dependencies
         "pillow",
         "lxml",
-        # python dependencies
         "gsconfig==0.6.9",
         "OWSLib==0.7.2",
         "Django==1.5.6",
         "gsimporter==0.1",
-        # Django Apps
         "pinax-theme-bootstrap==3.0a11",
         "pinax-theme-bootstrap-account==1.0b2",
         "django-user-accounts==1.0b14",
@@ -104,22 +101,14 @@ setup(name='GeoNode',
         "django-downloadview==1.2",
         "django-tastypie==0.11.0",
         "django-polymorphic==0.5.3",
-        #catalogue
         "pycsw==1.6.4",
-        # setup
         "Paver",
-        # sample and test data / metadata
         "gisdata==0.5.4",
-        # testing
         "django-nose",
         "nose>=1.0",
         "beautifulsoup4",
         "MultipartPostHandler",
-        # translation
         "transifex-client",
-        #haystack/elasticsearch, uncomment to use
-        #"django-haystack==2.1.0",
-        #"pyelasticsearch==0.6.1"
         ],
       zip_safe=False,
       )
