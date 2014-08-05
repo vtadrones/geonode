@@ -59,21 +59,21 @@ for dirpath, dirnames, filenames in os.walk(geonode_dir):
         data_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
 
-setup(name='GeoNode',
+setup(name='geoshape-geonode',
       version=__import__('geonode').get_version(),
-      description="Application for serving and sharing geospatial data",
+      description="The GeoNode used for the GeoShape (formerly ROGUE) project (http://geoshape.org).",
       long_description=open('README').read(),
       classifiers=[
         "Development Status :: 4 - Beta"],
       keywords='',
-      author='GeoNode Developers',
-      author_email='dev@geonode.org',
-      url='http://geonode.org',
+      author='LMN Solutions',
+      author_email='geoshape.org@gmail.com',
+      url='https://github.com/ROGUE-JCTD/geonode',
       license='GPL',
       packages=packages,
       data_files=data_files,
       install_requires=[
-        ## The commented name next to the package
+                ## The commented name next to the package
         ## is the Ubuntu 14.04 package that provides it.
 
         ## Apps with official Ubuntu 14.04 packages
