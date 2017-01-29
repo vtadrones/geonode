@@ -689,8 +689,8 @@ msgstr[0] "ผู้ใช้"
 
 #: contrib/geosites/templates/master_index.html:46 templates/index.html:51
 msgid ""
-"GeoNode allows registered users to easily upload geospatial data in several "
-"formats including shapefile and GeoTiff."
+""
+""
 msgstr ""
 "GeoNode อนุญาตให้ผู้ใช้ที่ลงทะเบียนแล้วสามารถอัพโหลดข้อมูลเชิงพื้นที่ได้หลากหลายรูปแบบรวมทั้ง "
 "shapefile และ GeoTiff"

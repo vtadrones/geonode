@@ -727,8 +727,8 @@ msgstr[1] "Usuarios"
 
 #: contrib/geosites/templates/master_index.html:46 templates/index.html:51
 msgid ""
-"GeoNode allows registered users to easily upload geospatial data in several "
-"formats including shapefile and GeoTiff."
+""
+""
 msgstr ""
 "GeoNode permite a los usuarios registrados cargar datos geoespaciales "
 "fácilmente en diversos formatos incluyendo Shapefile y GeoTiff."

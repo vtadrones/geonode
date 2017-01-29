@@ -705,8 +705,8 @@ msgstr[1] ""
 
 #: contrib/geosites/templates/master_index.html:46 templates/index.html:51
 msgid ""
-"GeoNode allows registered users to easily upload geospatial data in several "
-"formats including shapefile and GeoTiff."
+""
+""
 msgstr ""
 "GeoNode kan registrerade användare att enkelt ladda upp kartdata i flera "
 "format, inklusive shape-filen och GeoTIFF."

@@ -712,8 +712,8 @@ msgstr[1] "Watumiaji"
 
 #: contrib/geosites/templates/master_index.html:46 templates/index.html:51
 msgid ""
-"GeoNode allows registered users to easily upload geospatial data in several "
-"formats including shapefile and GeoTiff."
+""
+""
 msgstr ""
 "GeoNode inaruhusu watumiaji waliosajiliwa kupakia kwa urahisi data za "
 "kijiografia zilizokatika mifumo mbali mbali ikiwa ni pamoja na shapefile na "
