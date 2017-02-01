@@ -8,7 +8,7 @@
 
 {% block body_outer %}
 <div class="page-header">
-  <a href="{% url "layer_browse" %}" class="btn btn-primary pull-right">{% trans "Explore Layers" %}</a>
+  <a href="{% url "layer_browse" %}" class="btn btn-success pull-right">{% trans "Explore Layers" %}</a>
   <h2 class="page-title">{% trans "Edit Metadata" %}</h2>
 </div>
 <div class="row">
@@ -56,7 +56,7 @@
         {% endif %}
 
         <div class="form-actions">
-          <input type="submit" class="btn btn-primary" value="{% trans "Update" %}"/>
+          <input type="submit" class="btn btn-success" value="{% trans "Update" %}"/>
         </div>
 
 
@@ -106,16 +106,16 @@
             <fieldset class="form-controls modal-forms modal hide fade" id="poc_form" >
               <h2>{% trans "Point of Contact" %}</h2>
               {{ poc_form|as_bootstrap }}
-              <button type='button' class="modal-cloose-btn btn btn-primary">Done</button>
+              <button type='button' class="modal-cloose-btn btn btn-success">Done</button>
             </fieldset>
             <fieldset class="form-controls modal-forms modal hide fade" id="metadata_form">
               <h2>{% trans "Metadata Provider" %}</h2>
                 {{ author_form|as_bootstrap }}
-              <button type='button' class="modal-cloose-btn btn btn-primary">Done</button>
+              <button type='button' class="modal-cloose-btn btn btn-success">Done</button>
             </fieldset>
 
             <div class="form-actions">
-              <input type="submit" class="btn btn-primary" value="{% trans "Update" %}"/>
+              <input type="submit" class="btn btn-success" value="{% trans "Update" %}"/>
             </div>
           </div>
         </div>

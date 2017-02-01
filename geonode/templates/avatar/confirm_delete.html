@@ -12,7 +12,7 @@
             <ul>
                 {{ delete_avatar_form.as_ul }}
             </ul>
-            <p>{% csrf_token %}<input type="submit" class="btn btn-primary" value="{% trans "Delete These" %}" /></p>
+            <p>{% csrf_token %}<input type="submit" class="btn btn-success" value="{% trans "Delete These" %}" /></p>
         </form>
     {% endif %}
 {% endblock %}

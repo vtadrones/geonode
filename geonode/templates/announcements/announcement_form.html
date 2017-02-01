@@ -24,7 +24,7 @@
     {% if announcement %}
     <a href="{% url "announcements_delete" pk=announcement.pk %}" class="btn btn-danger">{% trans "Delete" %}</a>
     {% endif %}
-    <button type="submit" class="btn btn-primary">{% trans "Save" %}</button>
+    <button type="submit" class="btn btn-success">{% trans "Save" %}</button>
   </div>
 </form>
 {% endblock %}

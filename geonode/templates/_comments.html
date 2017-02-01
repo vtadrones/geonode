@@ -14,7 +14,7 @@
 
   {% if user.is_authenticated %}
   <div class="clearfix">
-    <a href="#form_post_comment_div" role="button" class="btn pull-right btn-primary" data-toggle="modal">{% trans 'Add Comment' %}</a>
+    <a href="#form_post_comment_div" role="button" class="btn pull-right btn-success" data-toggle="modal">{% trans 'Add Comment' %}</a>
   </div>
   {% else %}
   <div class="clearfix">
@@ -64,7 +64,7 @@
           </div>
           <div class="modal-footer">
               <button class="btn" data-dismiss="modal" aria-hidden="true">{% trans "Cancel" %}</button>
-              <button id="comment_submit_btn" class="btn btn-primary">{% trans 'Submit Comment' %}</button>
+              <button id="comment_submit_btn" class="btn btn-success">{% trans 'Submit Comment' %}</button>
           </div>
         </form>
       </div>

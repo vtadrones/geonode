@@ -25,7 +25,7 @@
                 {% endif %}
                 |
                 {% if member.role == 'manager' %}
-                  <span class="btn btn-primary btn-xs">{% trans 'Manager' %}</span>
+                  <span class="btn btn-success btn-xs">{% trans 'Manager' %}</span>
                   |
                 {% endif %}
                 <form style="display: inline;" method="POST" action="{% url "group_member_remove" group.slug member.user.username %}">
@@ -51,7 +51,7 @@
                 {% endif %}
                 |
                 {% if member.role == 'manager' %}
-                  <span class="btn btn-primary btn-xs">{% trans 'Manager' %}</span>
+                  <span class="btn btn-success btn-xs">{% trans 'Manager' %}</span>
                   |
                 {% endif %}
                 <form style="display: inline;" method="POST" action="{% url "group_member_remove" group.slug member.user.username %}">
@@ -78,7 +78,7 @@
                 {% endif %}
                 |
                 {% if member.role == 'manager' %}
-                  <span class="btn btn-primary btn-xs">{% trans 'Manager' %}</span>
+                  <span class="btn btn-success btn-xs">{% trans 'Manager' %}</span>
                   |
                 {% endif %}
                 <form style="display: inline;" method="POST" action="{% url "group_member_remove" group.slug member.user.username %}">

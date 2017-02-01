@@ -13,7 +13,7 @@
 
 {% block body_outer %}
 <div class="page-header">
-  <a href="{% url "document_browse" %}" class="btn btn-primary pull-right">{% trans "Explore Documents" %}</a>
+  <a href="{% url "document_browse" %}" class="btn btn-success pull-right">{% trans "Explore Documents" %}</a>
   <h2 class="page-title">{% trans "Edit Metadata" %}</h2>
 </div> 
 <div class="row">
@@ -45,7 +45,7 @@
         </ul>
       {% endif %}
         <div class="form-actions">
-          <input type="submit" class="btn btn-primary" value="{% trans "Update" %}"/>
+          <input type="submit" class="btn btn-success" value="{% trans "Update" %}"/>
         </div>
       {% csrf_token %}
       <div class="form-controls">
@@ -54,12 +54,12 @@
       <fieldset class="form-controls modal-forms modal hide fade" id="poc_form" >
         <h2>{% trans "Point of Contact" %}</h2>
         {{ poc_form|as_bootstrap }}
-        <button type='button' class="modal-cloose-btn btn btn-primary">Done</button>
+        <button type='button' class="modal-cloose-btn btn btn-success">Done</button>
       </fieldset>
       <fieldset class="form-controls modal-forms modal hide fade" id="metadata_form">
         <h2>{% trans "Metadata Provider" %}</h2>
           {{ author_form|as_bootstrap }}
-        <button type='button' class="modal-cloose-btn btn btn-primary">Done</button>
+        <button type='button' class="modal-cloose-btn btn btn-success">Done</button>
       </fieldset>
       <fieldset id="category_form">
         <label class="control-label required-field">{% trans "Category" %}</label><br/>
@@ -79,7 +79,7 @@
         {% endautoescape %}
       </fieldset>
       <div class="form-actions">
-        <input type="submit" class="btn btn-primary" value="{% trans "Update" %}"/>
+        <input type="submit" class="btn btn-success" value="{% trans "Update" %}"/>
       </div>
     </form>
   </div>
