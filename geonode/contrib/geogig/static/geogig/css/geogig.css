@@ -13,7 +13,7 @@
 }
 
 .stat-title {
-    color: #999;
+    color: #545454;
     font-size: 14px;
     font-variant: small-caps;
 }
@@ -37,11 +37,11 @@
 }
 .commit-author {
     font-weight: bold;
-    color: #999;
+    color: #545454;
 }
 
 .commit-timestamp {
-    color: #999;
+    color: #545454;
 }
 
 #copy-button.fa {
